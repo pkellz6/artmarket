@@ -1,6 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-
+<p>
+  <strong></strong>
+  <%= image_tag @artist.url %>
+</p>
 <p>
   <strong>Artist ID:</strong>
   <%= @artist.id %>
@@ -20,15 +23,16 @@
   <strong>Contact:</strong>
   <%= @artist.contact %>
 </p>
-
-<p>
-  <strong>Url:</strong>
-  <%= @artist.url %>
-</p>
-
-
-
-
+<h9>Current products for sale</h9>
+<br></br>
+<%   @product.each do |x| %>
+<%  if x.artist_id == @artist.id %>
+<%= link_to x.title, product_url %>
+<% else %>
+<% "You have no art on display"%>
+<% end %>
+<% end %>
+<br></br>
 <%= link_to 'Add new product', new_product_path%>
 
 

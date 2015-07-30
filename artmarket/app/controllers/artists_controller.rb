@@ -10,6 +10,8 @@ class ArtistsController < ApplicationController
   # GET /artists/1
   # GET /artists/1.json
   def show
+    @product = Product.all
+    @artist = Artist.find(params[:id])
   end
 
   # GET /artists/new

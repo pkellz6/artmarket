@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+
+  get 'abouts' =>'abouts#index'
+  get 'abouts/index'
+
+  get 'abouts/show'
+
+  get 'abouts/new'
+
   resources :reviews
   resources :products
   resources :artists
@@ -6,7 +14,8 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'products#homepage'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
