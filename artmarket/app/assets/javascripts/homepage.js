@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  console.log("hi");
   var width = 960;
 	height = 538;
 	var numberOfBlinds = 24;
