@@ -23,6 +23,7 @@
   <strong>Contact:</strong>
   <%= @artist.contact %>
 </p>
+<p>
 <h9>Current products for sale</h9>
 <br></br>
 <%   @product.each do |x| %>
@@ -33,8 +34,11 @@
 <% end %>
 <% end %>
 <br></br>
+</p>
+<p>
 <%= link_to 'Add new product', new_product_path%>
 
 
 <%= link_to 'Edit', edit_artist_path(@artist) %> |
 <%= link_to 'Back', artists_path %>
+</p>

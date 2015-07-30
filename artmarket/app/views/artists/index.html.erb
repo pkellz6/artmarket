@@ -16,10 +16,11 @@
   <tbody>
     <% @artists.each do |artist| %>
       <tr>
+        <td><%= image_tag artist.url %></td>
         <td><%= artist.name %></td>
         <td><%= artist.about %></td>
         <td><%= artist.contact %></td>
-        <td></td>
+
         <td><%= link_to 'Show', artist %></td>
         <td><%= link_to 'Edit', edit_artist_path(artist) %></td>
         <td><%= link_to 'Destroy', artist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -27,6 +28,7 @@
     <% end %>
   </tbody>
 </table>
+
 
 <br>
 
