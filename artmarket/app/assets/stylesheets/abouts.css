@@ -1,4 +1,45 @@
-/*
-  Place all the styles related to the matching controller here.
-  They will automatically be included in application.css.
-*/
+div.about {
+  background: white;
+  color: black;
+  padding: 3%;
+  margin: 3%;
+}
+
+.about {
+  font-family: Futura;
+  font-size: 1.1em;
+}
+
+h3.about {
+  font-size: 1.3em;
+}
+
+h2.about {
+  font-size: 1.75em;
+}
+
+
+.slideshow {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border: 10px solid black;
+    background: white;
+    color: #FFF;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.slideshow ul {
+  width: 700%;
+  height: 200px;
+  padding:0; margin:0;
+  list-style: none;
+}
+.slideshow li {
+  float: left;
+  text-align: center;
+  line-height: 150px;
+  font-size: 4em;
+  width: 500px;
+  height: 300px;
+}

@@ -1,74 +1,51 @@
-
+/*------------------HomePageCSS----------------------*/
 body
 {
 	background-color: #000;
-	padding: 4%;
+	/*padding: 4%;*/
 	color: white;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1em;
 }
 
-img {
-  margin-top: -1%;
+a.index {
+	text-decoration: none;
 }
 
-.header {
-  padding-bottom: 2%;
-  margin-top: -2%;
+a.index:hover {
+	text-decoration: underline;
+	color: white;
 }
 
-.header:hover {
-  curser: pointer;
-}
-
-h1 {
+h1.home {
+	color: white;
   display: inline;
-  margin-left: 5%;
-  padding-top: 0%;
+  margin-left: 4%;
   padding: 1%;
-  margin-bottom: 3%;
+	text-decoration: none;
 }
 
-.logo {
-  background: url(logo.png);
-}
-
-h1:hover {
-  color: rgba( 100, 100, 100, 10);
-  text-decoration: underline;
-}
-
-h1:hover {
+a.index:hover {
   curser: pointer;
 }
 
-a
-{
+a.home {
+	color: white;
+	text-decoration: none;
+}
+
+a.home:hover {
 	color: #0CC5DA;
 	text-decoration: none;
 }
 
-a:hover
-{
-	color: #DCE808;
-	text-decoration: underline;
-}
-
-div.header:hover {
-  curser: pointer;
-}
-
-p
+p.home
 {
   margin: 0 auto;
   width: 960px;
   margin-top: 1%;
   text-align: center;
-}
-
-p.larger
-{
-  font-size: 1.1em;
+	font-size: 1.1em;
 }
 
 .container
@@ -101,5 +78,7 @@ p.larger
 .container li.active
 {
 	display: inline;
-  margin-left: 4%;
 }
+
+
+/*---------------MainCSSEndsHere----------------------*/
