@@ -2,34 +2,42 @@
 
 
 
-<table>
-  <thead>
-    <tr>
-      <th></th>
-      <th>Title</th>
-      <th>Price</th>
-      <th>Artist</th>
-      <th>Description</th>
 
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
+
+<p><u>Art For Sale</u></p>
+  <br></br>
+
+
+
+
+
+
+
+
+  <p>
     <% @products.each do |product| %>
-      <tr>
-        <td><%= image_tag product.image_url %></td>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= product.title %></td>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= product.price %></td>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to product.artist.name, artist_path(product.artist) %></td>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= truncate(product.description, length: 35) %></td>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to 'Show More', product %></td>
+
+        <p><%= image_tag product.image_url %></p>
+        <p><strong>Title</strong></p>
+        <p><%= product.title %></p>
+        <p><strong>Price</strong></p>
+        <p>$<%= product.price %></p>
+        <p><strong>Artist</strong></p>
+        <p><%= link_to product.artist.name, artist_path(product.artist) %></p>
+        <p><strong>Description</strong></p>
+        <p><%= truncate(product.description, length: 35) %></p>
+        <p><%= link_to 'Show More', product %></p>
+        <br></br>
+        <br></br>
+        <br></br>
 
 
-      </tr>
+
+
     <% end %>
-  </tbody>
-</table>
+  </p>
+
 
 <br>
 

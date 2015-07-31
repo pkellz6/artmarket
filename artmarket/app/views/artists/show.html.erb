@@ -24,7 +24,8 @@
   <%= @artist.contact %>
 </p>
 <p>
-<h9>Current products for sale</h9>
+  <br>
+<strong>Current products for sale</strong>
 <br></br>
 <%   @product.each do |x| %>
 <%  if x.artist_id == @artist.id %>

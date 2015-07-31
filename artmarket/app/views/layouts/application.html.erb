@@ -6,12 +6,12 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <div class="header" id="header">
+  <header class="header" id="header">
     <%= link_to image_tag("http://i946.photobucket.com/albums/ad303/pkellz6/logo3_zpsc8opuhna.png") , root_path%>
     <h1><%= link_to "Gallery",  products_path %></h1>
     <h1><%= link_to "Artists",  artists_path %></h1>
     <h1><%= link_to "About",  abouts_path %></h1>
-  </div>
+  </header>
 </head>
 <body>
 
